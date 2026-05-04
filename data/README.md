@@ -2,8 +2,17 @@
 
 This folder is **ignored by git** by default (`.gitignore`), because it may contain large or private data.
 
+## How to fetch the raw data (SEDE)
+The SEDE query used to generate the raw CSVs is in:
+- `queries/sede_sql_qa_query.sql`
+
+Run it on Stack Exchange Data Explorer for Stack Overflow:
+`https://data.stackexchange.com/stackoverflow/`
+
+Export/download the results as CSV and place them in `data/sql_data/` using the filenames listed below.
+
 ## Expected raw inputs
-Place your raw query export CSVs under:
+Generate your raw query export CSVs using SEDE and the query in `queries/sede_sql_error_qa.sql`, then place them under:
 
 - `data/sql_data/QueryResults(1).csv`
 - `data/sql_data/QueryResults(4).csv`
